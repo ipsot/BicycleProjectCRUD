@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="@Url.Content("~/Content/bootstrap-css/bootstrap.min.css")" rel="stylesheet"/>
+</head>
+<body>
+
+
+    <h1 class="text-center">Велосипедный магазин</h1>
+
+    <h2>Каталог</h2>
+    <div id="mainDiv">
+
+    </div>
+    <div>
+        <button onclick="buttonLoadBicycleClick()">Загрузить каталог велосипедов</button>
+    </div>
+
+    <h3>Добавить велосипед</h3>
+    <p><label>Максимальная скорость<input type="number" id="inputFieldMaxSpeed" /></label></p>
+    <p><label>Модель<input type="text" id="inputFieldModel" /></label></p>
+    <p><label>Цвет<input type="text" id="inputFieldColor" /></label></p>
+    <p><label>Цена<input type="number" id="inputFieldPrice" /></label></p>
+    <p><button onclick="buttonAddNewBicycleClick()">Добавить велосипед</button></p>
+
+    <h3>Удалить велосипед по Id</h3>
+    <p><label>Id<input type="number" id="inputFieldId" /></label></p>
+    <p><button onclick="buttonDeleteBicycleByIdClick()">Удалить велосипед по ID</button></p>
+
+
+
+    <h3>Поиск по Id</h3>
+    <p><label>Id<input type="number" id="inputFieldIdForSearch" /></label></p>
+    <p><button onclick="buttonGetBicycleByIdClick()">Поиск</button></p>
+    <p><label>Максимальная скорость<input type="number" id="inputFieldMaxSpeedForSearch" /></label></p>
+    <p><label>Модель<input type="text" id="inputFieldModelForSearch" /></label></p>
+    <p><label>Цвет<input type="text" id="inputFieldColorForSearch" /></label></p>
+    <p><label>Цена<input type="number" id="inputFieldPriceForSearch" /></label></p>
+    <p><button onclick="buttonUpadeteBycicleClick()">Изменить данные</button></p>
+
+    <script src="@Url.Content("~/Scripts/bootstrap-js/jquery-3.0.0.slim.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap-js/bootstrap.bundle.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/BycicleClientIndex.js")" type="text/javascript"></script>
+</body>
+</html>
